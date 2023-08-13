@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title> Life Group Questionnaire </title>
+    </head>
+    <body>
+        <h1> Life Group Questionnaire </h1>
+        <form>
+           <fieldset>
+                <legend> Personal Information </legend>
+                    <p>
+                        <label for = "first_name"> Please enter your first name: </label>
+                        <br>
+                        <input id = "first_name" name = "first_name">
+                    </p>
+                    <p>
+                        <label for = "last_name"> Please enter your last name: </label>
+                        <br>
+                        <input id = "last_name" name = "last_name"> 
+                    </p>
+                    <p>
+                        Please select your gender:
+                        <br>
+                        <input type = "radio" id = "male" name = "gender" value = "male">  
+                        <label for = "male"> Male </label>
+                        <br>
+                        <input type = "radio" id = "female" name = "gender" value = "female"> 
+                        <label for = "female"> Female </label>
+                    </p>
+                    <p>
+                        <label for = "life_stage"> Please indicate your life stage? </label>
+                        <br>
+                        <select id = "life_stage" name = "life_stage"> 
+                            <option value = "youth"> High School Student and Younger </option>
+                            <option value = "undergrad"> Undergraduate Student </option>
+                            <option value = "graduate"> Graduate Student </option>
+                            <option value = "single_adult"> Single Adult </option>
+                            <option value = "married_adult"> Married Adult </option>
+                        </select>
+                    </p>
+                    <p> 
+                        <label for = "email"> Please enter your email address: </label>
+                        <br>
+                        <input id = "email" name = "email" pattern = "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]+$">
+                    </p>
+                    <p>
+                        <label for = "phone"> Please enter your phone number
+                            <br> 
+                            (No parentheses or dashes, just numbers): </label>
+                        <br>
+                        <input id = "phone" name = "phone" pattern = "^\d{10}$">
+                    </p>
+           </fieldset>
+           <br>
+           <fieldset>
+                <legend> Meeting Times </legend>
+                    <p>
+                        Please select all the days and times you can meet: <br> <br>
+                        <input type = "checkbox" id = "mon_630" name = "meeting_time[]" value = "mon_630">
+                        <label for = "mon_630"> Mondays at 6:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "mon_700" name = "meeting_time[]" value = "mon_700">
+                        <label for = "mon_700"> Mondays at 7:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "mon_730" name = "meeting_time[]" value = "mon_730">
+                        <label for = "mon_730"> Mondays at 7:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "mon_800" name = "meeting_time[]" value = "mon_800">
+                        <label for = "mon_800"> Mondays at 8:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "tue_630" name = "meeting_time[]" value = "tue_630">
+                        <label for = "tue_630"> Tuesdays at 6:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "tue_700" name = "meeting_time[]" value = "tue_700">
+                        <label for = "tue_700"> Tuesdays at 7:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "tue_730" name = "meeting_time[]" value = "tue_730">
+                        <label for = "tue_730"> Tuesdays at 7:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "tue_800" name = "meeting_time[]" value = "tue_800">
+                        <label for = "tue_800"> Tuesdays at 8:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "wed_630" name = "meeting_time[]" value = "wed_630">
+                        <label for = "wed_630"> Wednesdays at 6:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "wed_700" name = "meeting_time[]" value = "wed_700">
+                        <label for = "wed_700"> Wednesdays at 7:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "wed_730" name = "meeting_time[]" value = "wed_730">
+                        <label for = "wed_730"> Wednesdays at 7:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "wed_800" name = "meeting_time[]" value = "wed_800">
+                        <label for = "wed_800"> Wednesdays at 8:00 P.M. </label> <br>
+                        <input type = "checkbox" id = "thu_630" name = "meeting_time[]" value = "thu_630">
+                        <label for = "thu_630"> Thursdays at 6:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "thu_700" name = "meeting_time[]" value = "thu_700">
+                        <label for = "thu_700"> Thursdays at 7:00 P.M. </label> <br> 
+                        <input type = "checkbox" id = "thu_730" name = "meeting_time[]" value = "thu_730">
+                        <label for = "thu_730"> Thursdays at 7:30 P.M. </label> <br> 
+                        <input type = "checkbox" id = "thu_800" name = "meeting_time[]" value = "thu_800">
+                        <label for = "thu_800"> Thursdays at 8:00 P.M. </label>          
+           </fieldset>
+           <br>
+           <fieldset>
+                <legend> International Undergrad </legend>
+                <p>
+                    If you are an international undergrad student, please indicate if you would like to be in a Life Group
+                        for just international undergraduate students: <br> <br>
+                    <input type = "radio" id = "international_yes" name = "international" value = "international_yes">
+                    <label for = "international_yes"> Yes </label> <br>
+                    <input type = "radio" id = "international_no" name = "international" value = "international_no">
+                    <label for = "international_no"> No </label>
+                </p>
+           </fieldset>
+           <br>
+           <fieldset>
+                <legend> Relationship Status </legend>
+                <p> 
+                    Please indicate your relationship status: <br> <br>
+                    <input type = "radio" id = "single" name = "relationship_status" value = "single">
+                    <label for = "single"> Single </label> <br>
+                    <input type = "radio" id = "dating" name = "relationship_status" value = "dating">
+                    <label for = "dating"> Dating </label> <br>
+                    <input type = "radio" id = "married" name = "relationship_status" value = "married">
+                    <label for = "married"> Married </label> 
+                </p>
+           </fieldset>
+           <br>
+           <fieldset>
+                <legend> Other </legend>
+                <p>
+                    <label id = "first_time"> If this is your 1st time joining a Life Group, how did you find HMCC. 
+                        (If for a reason not specifically listed, please specify): </label> <br> <br>
+                    <input list = "found_HMCC" name = "first_time" id = "first_time"> <br> 
+                    <datalist id = "found_HMCC">
+                        <option value = "Through someone attending HMCC and/or Life Group"> </option>
+                        <option value = "HMCC Website"> </option>
+                        <option value = "Social Media"> </option>
+                        <option value = "Search Engine (Google, Bing, etc.)"> </option>
+                        <option value = "Word of Mouth"> </option>
+                    </datalist>
+                    <p> The following 3 questions are for people who have previously been in a Life Group. </p>
+                    <label for = "liked"> Please write what you liked about Life Group: </label> <br> <br>
+                    <textarea id = "liked" name = "liked" rows = "8" cols = "100"> </textarea> <br> <br>
+                    <label for = "recommendations"> Please write what you think could be improved about Life Group: </label> <br> <br>
+                    <textarea id = "recommendations" name = "recommendations" rows = "8" cols = "100"> </textarea> <br> <br>
+                    <label for = "previous_leaders"> Please write you your previous Life Group leaders were. </label> <br> <br>
+                    <input id = "previous_leaders" name = "previous_leaders">
+                </p>
+           </fieldset>
+           <br>
+           <input type = "submit" value = "Submit">
+        </form>
+  </body>
+</html> 

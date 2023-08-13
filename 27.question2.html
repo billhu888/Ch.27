@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Email and Password Login </title>
+    </head>
+    <body>
+        <h1> Email and Password Login </h1>
+        <p> Please enter a valid email and password: </p>
+        <form> 
+            <label for = "email"> Please enter your email: </label>
+            <br>
+            <input name = "email" id = "email" required
+                title = "Please enter a valid email address: "
+                pattern = "^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]+$">
+            <br> <br> 
+            <label for = "password"> Please enter your password: </label>
+            <br>
+            <input type = "password" name = "password" id = "password" required
+                title = "Please enter a password that is at least 8 characters with at least 1 upper-case letter, 
+                1 lower-case letter, and 1 number: " 
+                pattern = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$">
+            <br> 
+            <input type = "checkbox" id = "show_password"> 
+            <label for = "show_password"> Show Password </label> 
+            <br> <br>
+            <label for = "credit_card_num"> Please enter your credit card number (15 or 16 digits): </label>
+            <br>
+            <input name = "credit_card_num" id = "credit_card_num" required 
+            title = "Please enter your credit card number (15 or 16 digits): "
+            pattern = "^(?:\d{15}|\d{16})$"> 
+            <br> <br>  
+            <label for = "credit_card_cvv"> Please enter your 3 digit credit card CVV: </label>
+            <br>
+            <input name = "credit_card_cvv" id = "credit_card_cvv" required 
+                title = "Please enter your 3 digit credit card CVV: " pattern = "^\d{3}$">
+            <br> <br>   
+            <input type = "submit" value = "Submit">
+        </form>
+        <script src = "27.question2.js"> </script>
+    </body>
+</html>
